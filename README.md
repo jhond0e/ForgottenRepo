@@ -5,6 +5,7 @@ Discovering private or deleted github repositories through exposed .git/config o
 ```bash
 git clone https://github.com/jhond0e/ForgottenRepo
 cd ForgottenRepo
+chmod +x scanner.sh
 nano scanner.sh # Change API_KEY value with your own (free) LeakIX api key
 ```
 
@@ -18,5 +19,5 @@ Options:
 
 ### Example
 ```bash
-bash scanner.sh -u NationalSecurityAgency -o classified.txt
+./scanner.sh -u NationalSecurityAgency -o classified.txt
 ```
